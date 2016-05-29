@@ -1,5 +1,5 @@
 
-# Import eZ Platform data schema for GraphQL Star Wars example
+# eZ Platform schema for GraphQL Star Wars example
 
 This is an example of data used by the Kaliop eZ Migrations Bundle for eZ Platform (and eZ Publish 5.x).
 
