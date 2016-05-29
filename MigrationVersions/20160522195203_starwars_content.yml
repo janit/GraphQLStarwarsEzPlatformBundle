@@ -1,0 +1,105 @@
+
+# Create Droids
+
+-
+  mode: create
+  type: content
+  content_type: folder
+  main_location: 2
+  attributes:
+    - name: "Droids"
+  references:
+    -
+      identifier: droids_location
+      attribute: location_id
+
+-
+    mode: create
+    type: content
+    content_type: droid
+    main_location: reference:droids_location
+    priority: 0
+    attributes:
+        - id: r2d2
+        - name: "Artoo"
+
+-
+    mode: create
+    type: content
+    content_type: droid
+    main_location: reference:droids_location
+    priority: 0
+    attributes:
+        - id: 3cpo
+        - name: "Threepio"
+
+
+# Create Humans
+
+-
+  mode: create
+  type: content
+  content_type: folder
+  main_location: 2
+  attributes:
+    - name: "Humans"
+  references:
+    -
+      identifier: humans_location
+      attribute: location_id
+
+
+-
+    mode: create
+    type: content
+    content_type: human
+    main_location: reference:humans_location
+    priority: 0
+    attributes:
+        - id: 1000x
+        - name: "Luke Skywalker"
+        - home_planet: "Tatooine"
+
+-
+    mode: create
+    type: content
+    content_type: human
+    main_location: reference:humans_location
+    priority: 0
+    attributes:
+        - id: 1001x
+        - name: "Darth Vader"
+        - home_planet: "Tatooine"
+
+-
+    mode: create
+    type: content
+    content_type: human
+    main_location: reference:humans_location
+    priority: 0
+    attributes:
+        - id: 1002x
+        - name: "Han Solo"
+        - home_planet: "Tatooine"
+
+-
+    mode: create
+    type: content
+    content_type: human
+    main_location: reference:humans_location
+    priority: 0
+    attributes:
+        - id: 1003x
+        - name: "Leia Organa"
+        - home_planet: "Alderaan"
+
+-
+    mode: create
+    type: content
+    content_type: human
+    main_location: reference:humans_location
+    priority: 0
+    attributes:
+        - id: 1004x
+        - name: "Wilhuff Tarkin"
+        - home_planet: "Alderaan"

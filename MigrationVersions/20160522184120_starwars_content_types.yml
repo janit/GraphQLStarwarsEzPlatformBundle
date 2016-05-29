@@ -1,0 +1,76 @@
+-
+    mode: create
+    type: content_type
+    content_type_group: 1
+    name: Droid
+    identifier: droid
+    name_pattern: <name>
+    is_container: false
+    attributes:
+      -
+        type: ezstring
+        name: ID
+        identifier: id
+        description: "The id of the droid."
+        required: true
+      -
+        type: ezstring
+        name: Name
+        description: "The name of the droid."
+        identifier: name
+        required: false
+      -
+        type: ezobjectrelationlist
+        name: Friends
+        identifier: friends
+        required: false
+      -
+        type: ezobjectrelationlist
+        name: Appears in
+        identifier: appears_in
+        required: false
+      -
+        type: ezstring
+        name: Primary function
+        identifier: primary_function
+        description: "The primary function of the droid."
+        required: false
+
+-
+    mode: create
+    type: content_type
+    content_type_group: 1
+    name: Human
+    identifier: human
+    name_pattern: <name>
+    is_container: false
+    attributes:
+      -
+        type: ezstring
+        name: ID
+        identifier: id
+        description: "The id of the character."
+        required: true
+      -
+        type: ezstring
+        name: Name
+        identifier: name
+        description: "The name of the character."
+        required: false
+      -
+        type: ezstring
+        name: Home planet
+        identifier: home_planet
+        description: "The home planet of the human, or null if unknown."
+        required: false
+      -
+        type: ezobjectrelationlist
+        name: Friends
+        identifier: friends
+        description: "The friends of the character."
+        required: false
+      -
+        type: ezobjectrelationlist
+        name: Appears in
+        identifier: appears_in
+        required: false
