@@ -18,7 +18,7 @@ this bundle to your src directory and enable the bundle in your application kern
     
 Once you have this installed, then you can use the kaliop migrations to execute the migration:
 
-     php ezpublish/console kaliop:migration:update
+     php app/console kaliop:migration:update
 
 Once this is complete, then you should have content objects in your database that corresponds to
 to the examples that are used by the [GraphQL examples](https://github.com/graphql/graphql-js).
